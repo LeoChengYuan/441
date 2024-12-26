@@ -1,0 +1,325 @@
+/* Leo ChengYuan */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 10px;
+}
+
+nav {
+  margin: 30px auto;
+  position: relative;
+  width: 500px;
+  height: 60px;
+  background-color: #34495e;
+  border-radius: 8px;
+  font-size: 0;
+  box-shadow: 2px 2px 2px #000;
+}
+
+nav a {
+  width: 100px;
+  height: 100%;
+  line-height: 60px;
+  font-size: 16px;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+}
+
+/* Defines the initial state of the animation bar */
+.nav-animation {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  transition: all 0.5s ease;
+  border-radius: 8px;
+  width: 100px;
+  background-color: #34495e;
+}
+
+/* Hover effect of the first link */
+nav a:nth-child(1):hover ~.nav-animation {
+  left: 0;
+  background-color: #1abc9c;
+}
+
+/* Hover effect of the second link */
+nav a:nth-child(2):hover ~.nav-animation {
+  left: 100px;
+  background-color: #e74c3c;
+}
+
+/* The hover effect of the third link */
+nav a:nth-child(3):hover ~.nav-animation {
+  left: 200px;
+  background-color: #3498db;
+}
+
+/* The hover effect of the fourth link */
+nav a:nth-child(4):hover ~.nav-animation {
+  left: 300px;
+  background-color: #9b59b6;
+}
+
+/* The hover effect of the fifth link */
+nav a:nth-child(5):hover ~.nav-animation {
+  left: 400px;
+  background-color: #e67e22;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+/* Hero section */
+.hero {
+  background-image: url('hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 200px 0;
+  min-height: 80vh;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.hero p {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 15px 30px;
+  text-decoration: none;
+}
+
+/* Courseware */
+.course {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: 20px;
+  /* Sets the background color of the Courseware to light gray (#f5f5f5), adds padding of 20 pixels */
+}
+
+/* For tablets and medium screen sizes */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  nav {
+      width: 700px;
+  }
+  nav a {
+      width: 140px;
+  }
+  /* The animation bar width and position of the navigation bar should be adjusted */
+.nav-animation {
+      width: 140px;
+  }
+  nav a:nth-child(1):hover ~.nav-animation {
+      left: 0;
+  }
+  nav a:nth-child(2):hover ~.nav-animation {
+      left: 140px;
+  }
+  nav a:nth-child(3):hover ~.nav-animation {
+      left: 280px;
+  }
+  nav a:nth-child(4):hover ~.nav-animation {
+      left: 420px;
+  }
+  nav a:nth-child(5):hover ~.nav-animation {
+      left: 560px;
+  }
+  form {
+      width: 90%;
+  }
+ /* Other elements adjust size, spacing, and other styles as needed */
+.hero h1 {
+      font-size: 42px;
+  }
+.hero p {
+      font-size: 20px;
+  }
+.btn {
+      padding: 12px 25px;
+  }
+}
+
+/* For small screen sizes such as smartphones */
+@media screen and (max-width: 767px) {
+  nav {
+      width: 100%;
+      height: auto;
+      font-size: 0;
+  }
+  nav a {
+      width: 100%;
+      height: auto;
+      line-height: 40px;
+      font-size: 14px;
+      display: block;
+  }
+/* Adjust the animation bar width and initial position of the navigation bar */
+.nav-animation {
+      width: 100%;
+      left: 0;
+      top: auto;
+      height: 5px;
+      bottom: 0;
+  }
+  nav a:hover ~.nav-animation {
+      background-color: transparent;
+  }
+  nav a:hover {
+      background-color: #1abc9c;
+  }
+  form {
+      width: 95%;
+  }
+  label {
+      margin-bottom: 8px;
+  }
+  button {
+      padding: 8px 16px;
+  }
+/* Hero area style adjustment */
+.hero {
+      padding: 100px 0;
+      min-height: 60vh;
+  }
+.hero h1 {
+      font-size: 32px;
+      margin-bottom: 20px;
+  }
+.hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+  }
+.btn {
+      padding: 10px 20px;
+  }
+/* Product display area and other layout adjustments (examples, based on the actual page structure adjustment) */
+.products {
+      flex-direction: column;
+  }
+/* Footer style adjustment */
+  footer {
+      padding: 20px 0;
+  }
+.footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+.footer-links li {
+      display: block;
+      margin: 10px 0;
+  }
+}
+
+form {
+  max-width: 400px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+select {
+  padding: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.product {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+#cart {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#totalPrice {
+  font-weight: bold;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: #aaa;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline;
+  margin-right: 15px;
+}
+
+.footer-links li a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+  color: #fff;
+}

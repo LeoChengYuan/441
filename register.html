@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CC ITSchool Enquiry</title>
+  <script src="auth.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <a href="#"><img src="logo.jpg" alt="logo"></a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="courseware.html">Courseware</a>
+      <a href="register.html">Enquiry</a>
+      <a href="projects.html">Projects</a>
+      <div class="nav-animation"></div>
+  </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+        <h2>Register</h2>
+        <form id="registerForm">
+        
+            <label for="email">Email:</label>  
+            <input type="email" id="email" name="email" required>  
+        
+            <label for="phone">Phone:</label>  
+            <input type="tel" id="phone" name="phone" required> 
+
+            <label for="City">City:</label>  
+            <input type="City" id="City" name="City" required>  
+
+            <label for="regUsername">Username:</label>
+            <input type="text" id="regUsername" name="regUsername" required>
+            <label for="regPassword">Password:</label>
+            <input type="password" id="regPassword" name="regPassword" required>
+
+            <button type="submit">Register</button>
+        </form>
+
+        <h2 >Login</h2>
+        <form id="loginForm">
+            <label for="loginUsername">Username:</label>
+            <input type="text" id="loginUsername" name="loginUsername" required>
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+</main>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2024 CC ITSchool. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+
+</html>
